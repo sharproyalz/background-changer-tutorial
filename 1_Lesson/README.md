@@ -18,9 +18,11 @@ to learn more about this. Visit *https://www.w3schools.com/js/js_variables.asp*
 
 It represents the structure of an HTML document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. The DOM provides a way for programs to dynamically update the content, structure, and style of a document, allowing for interactive and dynamic web pages.
 
-`// Syntax
+```javascript
+// Syntax 
 document.getElementsById('my-id');
-document.getElementsByClassName('my-class');`
+document.getElementsByClassName('my-class');
+```
 
 to learn more about this. Visit *https://www.w3schools.com/jsref/dom_obj_all.asp*
 
@@ -28,35 +30,30 @@ to learn more about this. Visit *https://www.w3schools.com/jsref/dom_obj_all.asp
 
 **Step 1** - Create and Link your javascript file.
 
-``
-
+```html
 <script src="app.js"></script>
-
-``
+```
 
 Create `app.js` and link it using the <script></script> in your HTML file, `index.html`.
 
 **Step 2** - Declare a variable of an HTML document that you are willing to manipulate.
 
-``
-
+```javascript
 const background = document.getElementById("grid-container");
 const box = document.querySelectorAll(".box");
 const boxFont = document.querySelectorAll(".box-font");
 const spacebarNote = document.getElementById("spacebar-note");
 const bgChangeButton = document.getElementById("change-bg");
+```
 
-``
 I have declared the variables necessary to manipulate my HTML document.
 
 **Step 3** - Add an addEventListener() method.
 
-``
-
+```javascript
 document.body.addEventListener("keypress", (e) => {
 console.log("Pressed", e.key);
 });
-
-``
+```
 
 I added an Event Listener that will display the pressed key in the console.
