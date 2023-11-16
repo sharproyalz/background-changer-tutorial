@@ -12,19 +12,19 @@ There are three keywords used for variable declaration in JavaScript: var, let, 
 
 **const**: Used to declare constants, ensuring that the assigned value remains unchanged throughout the program. It also has block-scoping like let.
 
-to learn more about this. Visit *https://www.w3schools.com/js/js_variables.asp*
+to learn more about **variable**. Visit *https://www.w3schools.com/js/js_variables.asp*
 
 #### Document Object Model (DOM)
 
 It represents the structure of an HTML document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. The DOM provides a way for programs to dynamically update the content, structure, and style of a document, allowing for interactive and dynamic web pages.
 
 ```javascript
-// Syntax 
-document.getElementsById('my-id');
-document.getElementsByClassName('my-class');
+// Syntax
+document.getElementsById("my-id");
+document.getElementsByClassName("my-class");
 ```
 
-to learn more about this. Visit *https://www.w3schools.com/jsref/dom_obj_all.asp*
+to learn more about **DOM**. Visit *https://www.w3schools.com/jsref/dom_obj_all.asp*
 
 #### Step by step
 
@@ -52,7 +52,7 @@ I have declared the variables necessary to manipulate my HTML document.
 
 ```javascript
 document.body.addEventListener("keypress", (e) => {
-console.log("Pressed", e.key);
+  console.log("Pressed", e.key);
 });
 ```
 
