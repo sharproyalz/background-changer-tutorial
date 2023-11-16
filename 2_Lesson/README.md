@@ -93,7 +93,7 @@ Arrays come with a variety of built-in methods for manipulation and iteration. S
 
 to learn more about **array**. Visit *https://www.w3schools.com/js/js_arrays.asp*.
 
-#### Step by step
+### Step by step
 
 **Step 1** - Declare a variable
 
