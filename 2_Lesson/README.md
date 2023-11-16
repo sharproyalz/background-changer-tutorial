@@ -1,6 +1,6 @@
-### Lesson 1 - Loop
+## Lesson 1 - Loop
 
-#### Loop
+### Loop
 
 A loop is a programming construct that allows you to repeatedly execute a block of code as long as a certain condition is true. Loops are used to automate repetitive tasks, making it more efficient and concise to perform iterations over a set of data or execute a block of code multiple times.
 There are three keywords used for variable declaration in JavaScript: var, let, and const. These keywords establish the scope and mutability of the variable.
@@ -38,7 +38,7 @@ while (i < 5) {
 
 to learn more about **loop**. Visit *https://www.w3schools.com/js/js_loop_for.asp* and *https://www.w3schools.com/js/js_loop_while.asp*.
 
-#### Array
+### Array
 
 An array in JavaScript is a data structure that allows you to store and organize multiple values within a single variable. These values can be of any data type, such as numbers, strings, objects, or other arrays. Arrays provide a way to group related data under a single name, making it easier to manage and manipulate collections of values in your code.
 
