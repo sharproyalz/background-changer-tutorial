@@ -1,6 +1,6 @@
-### Lesson 1 - Variables and DOM
+## Lesson 1 - Variables and DOM
 
-#### Variables
+### Variables
 
 A variable is a symbolic name that represents or refers to a value. It serves as a storage location identified by a unique name, allowing developers to store and manipulate data within a program. Variables enable the dynamic handling of information by providing a means to store values of various types, such as numbers, strings, or objects.
 
@@ -14,7 +14,7 @@ There are three keywords used for variable declaration in JavaScript: var, let, 
 
 to learn more about **variable**. Visit *https://www.w3schools.com/js/js_variables.asp*
 
-#### Document Object Model (DOM)
+### Document Object Model (DOM)
 
 It represents the structure of an HTML document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. The DOM provides a way for programs to dynamically update the content, structure, and style of a document, allowing for interactive and dynamic web pages.
 
@@ -26,7 +26,7 @@ document.getElementsByClassName("my-class");
 
 to learn more about **DOM**. Visit *https://www.w3schools.com/jsref/dom_obj_all.asp*
 
-#### Step by step
+### Step by step
 
 **Step 1** - Create and Link your javascript file.
 
