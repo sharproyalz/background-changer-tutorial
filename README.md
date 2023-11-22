@@ -9,4 +9,4 @@ At the end of this tutorial you will be able to:
 
 ### Prerequisite
 
-- Basic knowledge about HTML and CSS
+- You should have a basic knowledge about HTML and CSS. If you don't have yet, I recommend to visit this website *https://www.w3schools.com/html/* because they have a beginner friendly tutorial.
