@@ -1,4 +1,4 @@
-## Lesson 1 - Loop
+## Lesson 2 - Loop
 
 ### Loop
 
@@ -11,7 +11,7 @@ There are several types of loops in JavaScript, but the two most common ones are
 
 ```javascript
 for (let i = 1; i < 5; i++) {
-  console.log("Number: ", i);
+    console.log("Number: ", i);
 }
 // Output
 // Number: 1
@@ -20,21 +20,21 @@ for (let i = 1; i < 5; i++) {
 // Number: 4
 ```
 
-- Initialization (let i = 1): Initializes a counter variable.
-- Condition (i < 5): Specifies the condition for the loop to continue.
-- Iteration (i++): Updates the counter variable after each iteration.
+-   Initialization (let i = 1): Initializes a counter variable.
+-   Condition (i < 5): Specifies the condition for the loop to continue.
+-   Iteration (i++): Updates the counter variable after each iteration.
 
 **while** loop is used when the number of iterations is not known in advance and is based on a certain condition.
 
 ```javascript
 let i = 0; // initialization
 while (i < 5) {
-  console.log("Number: ", i);
-  i++; // iteration
+    console.log("Number: ", i);
+    i++; // iteration
 }
 ```
 
-- Condition (i < 5): Specifies the condition for the loop to continue.
+-   Condition (i < 5): Specifies the condition for the loop to continue.
 
 to learn more about **loop**. Visit *https://www.w3schools.com/js/js_loop_for.asp* and *https://www.w3schools.com/js/js_loop_while.asp*.
 
@@ -49,8 +49,8 @@ An array in JavaScript is a data structure that allows you to store and organize
 let fruits = ["apple", "banana", "orange"];
 let grades = [87, 90, 85, 91];
 let cart = [
-  { name: "laptop", price: "40199" },
-  { name: "desktop", price: "51199" },
+    { name: "laptop", price: "40199" },
+    { name: "desktop", price: "51199" },
 ];
 ```
 
@@ -102,37 +102,38 @@ const hexCode = "0123456789ABCDEF";
 let hexCodeContainer = [];
 ```
 
-- I declared in my 'hexCode' all the possible characters are there in an Hex Code. There are 16 characters which is number 0 to 9 and letter A to F.
-- I declared 'hexCodeContainer' as an array. I will store here my hex codes.
+-   I declared in my 'hexCode' all the possible characters are there in an Hex Code. There are 16 characters which is number 0 to 9 and letter A to F.
+-   I declared 'hexCodeContainer' as an array. I will store here my hex codes.
 
 **Step 2** - Declare a variable
 
 ```javascript
 hexCodeCompleted = "#"; // Storing a 6 hex code characters
 for (let i = 0; i < 6; i++) {
-  const randomHexCode = hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
-  hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
+    const randomHexCode = hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
+    hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
 }
 ```
 
-- Use for loop for getting the 6 hex code characters.
-- 'randomHexCode' is my randomizer. It randomizes the indexes of my 'hexCode' variable. To learn more about _Math Object_. Visit *https://www.w3schools.com/js/js_math.asp*.
-- After getting the a random hex code character, I will add it to my variable 'hexCodeCompleted'.
-- It will loop until the 'i' is not less than 6. If the loop ends it will display "#" with 6 hex code characters.
+-   Use for loop for getting the 6 hex code characters.
+-   'randomHexCode' is my randomizer. It randomizes the indexes of my 'hexCode' variable. To learn more about _Math Object_. Visit *https://www.w3schools.com/js/js_math.asp*.
+-   After getting the a random hex code character, I will add it to my variable 'hexCodeCompleted'.
+-   It will loop until the 'i' is not less than 6. If the loop ends it will display "#" with 6 hex code characters.
 
 **Step 3** - Nesting loop
 
 ```javascript
 for (let i = 0; i < 9; i++) {
-  hexCodeCompleted = "#"; // Storing a 6 hex code characters
-  for (let j = 0; j < 6; i++) {
-    const randomHexCode = hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
-    hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
-  }
-  hexCodeContainer.push(hexCodeCompleted); // Adding a hex code to hex code container using array.push().
+    hexCodeCompleted = "#"; // Storing a 6 hex code characters
+    for (let j = 0; j < 6; i++) {
+        const randomHexCode =
+            hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
+        hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
+    }
+    hexCodeContainer.push(hexCodeCompleted); // Adding a hex code to hex code container using array.push().
 }
 ```
 
-- I changed the variable 'i' to 'j' in `for(let i = 0; i < 6; i++)` from the step 2.
-- I added a loop so that I can store not just one hex code, but as many as I want and inserted my previous loop. In this case we are going to get 9 color pallets.
-- For every iterate of the parent loop, all the completed Hex Code will be added to 'hexCodeContainer'.
+-   I changed the variable 'i' to 'j' in `for(let i = 0; i < 6; i++)` from the step 2.
+-   I added a loop so that I can store not just one hex code, but as many as I want and inserted my previous loop. In this case we are going to get 9 color pallets.
+-   For every iterate of the parent loop, all the completed Hex Code will be added to 'hexCodeContainer'.

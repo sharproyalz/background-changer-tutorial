@@ -4,7 +4,8 @@ const boxFont = document.querySelectorAll(".box-font");
 const spacebarNote = document.getElementById("spacebar-note");
 const bgChangeButton = document.getElementById("change-bg");
 
-document.body.addEventListener("keypress", (e) => {
+
+const backgroundChanger = () => {
   const hexCode = "0123456789ABCDEF";
   let hexCodeContainer = [];
 
@@ -18,4 +19,8 @@ document.body.addEventListener("keypress", (e) => {
   }
 
   console.log(hexCodeContainer); // Outputs: an array with 9 random elements.
+}
+
+document.body.addEventListener("keypress", (e) => {
+  backgroundChanger()
 });

@@ -1,10 +1,10 @@
-## Lesson 1 - Function
+## Lesson 3 - Function
 
 ### Function
 
 A function is a block of code designed to perform a particular task. Functions are a fundamental building block of JavaScript programming, and they allow you to group code into reusable units. Functions can take parameters (inputs), execute a set of statements, and return a value.
 
-Here's a basic syntax for defining a function in JavaScript:
+Here's a basic syntax for defining a function:
 
 ```javascript
 function functionName(parameter1, parameter2 /* ... */) {
@@ -78,45 +78,39 @@ to learn more about **function**. Visit *https://www.w3schools.com/js/js_functio
 
 ### Step by step
 
-**Step 1** - Declare a variable
+**Step 1** - Declare a function.
 
 ```javascript
-const hexCode = "0123456789ABCDEF";
-let hexCodeContainer = [];
+const backgroundChanger = () => {};
 ```
 
--   I declared in my 'hexCode' all the possible characters are there in an Hex Code. There are 16 characters which is number 0 to 9 and letter A to F.
--   I declared 'hexCodeContainer' as an array. I will store here my hex codes.
+-   I declared `backgroundChanger` function and we will use it to put our previous codes inside.
 
-**Step 2** - Declare a variable
-
-```javascript
-hexCodeCompleted = "#"; // Storing a 6 hex code characters
-for (let i = 0; i < 6; i++) {
-    const randomHexCode = hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
-    hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
-}
-```
-
--   Use for loop for getting the 6 hex code characters.
--   'randomHexCode' is my randomizer. It randomizes the indexes of my 'hexCode' variable. To learn more about _Math Object_. Visit *https://www.w3schools.com/js/js_math.asp*.
--   After getting the a random hex code character, I will add it to my variable 'hexCodeCompleted'.
--   It will loop until the 'i' is not less than 6. If the loop ends it will display "#" with 6 hex code characters.
-
-**Step 3** - Nesting loop
+**Step 2** - Move inside the function all the codes inside of `document.body.addEventListener("keypress", (e) => {});`
 
 ```javascript
-for (let i = 0; i < 9; i++) {
-    hexCodeCompleted = "#"; // Storing a 6 hex code characters
-    for (let j = 0; j < 6; i++) {
-        const randomHexCode =
-            hexCode[Math.floor(Math.random() * hexCode.length)]; // Outputs a random hex code character.
-        hexCodeCompleted += randomHexCode; // Adding a string intro hexCodeCompleted
+const backgroundChanger = () => {
+    // Move inside this function
+    const hexCode = "0123456789ABCDEF";
+    let hexCodeContainer = [];
+
+    for (let i = 0; i < 9; i++) {
+        hexCodeCompleted = "#";
+        for (let j = 0; j < 6; j++) {
+            const randomHexCode =
+                hexCode[Math.floor(Math.random() * hexCode.length)];
+            hexCodeCompleted += randomHexCode;
+        }
+        hexCodeContainer.push(hexCodeCompleted);
     }
-    hexCodeContainer.push(hexCodeCompleted); // Adding a hex code to hex code container using array.push().
-}
+    console.log(hexCodeContainer); // Outputs: an array with 9 random elements.
+};
+
+document.body.addEventListener("keypress", (e) => {
+    backgroundChanger(); // Calling the backgroundChanger function
+});
 ```
 
--   I changed the variable 'i' to 'j' in `for(let i = 0; i < 6; i++)` from the step 2.
--   I added a loop so that I can store not just one hex code, but as many as I want and inserted my previous loop. In this case we are going to get 9 color pallets.
--   For every iterate of the parent loop, all the completed Hex Code will be added to 'hexCodeContainer'.
+-   I moved the code inside of `document.body.addEventListener("keypress", (e) => {});` and put it inside the function.
+-   I added `backgroundChanger()` to call the function.
+-   Try it and its output will be the same.
