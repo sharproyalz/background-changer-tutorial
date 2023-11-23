@@ -1,4 +1,4 @@
-## Lesson 3 - Conditional Statement
+## Lesson 4 - Conditional Statement
 
 ### Conditional Statement
 
